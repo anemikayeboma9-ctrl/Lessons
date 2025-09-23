@@ -1,0 +1,95 @@
+body{
+    background-color:  hsl(216, 12%, 8%);
+    display: flex;
+    justify-self: center;
+    padding: 150px;
+    border: 150px; 
+ }
+ .card{
+    background-color:  hsl(213, 19%, 18%) ;
+    border:  hsl(213, 19%, 18%) 1px;
+    width: 250px;
+
+    border-radius: 15px;
+    padding: 10px;
+    
+ }
+ .star_img{
+    background-color:  hsl(214, 17%, 28%);
+    border:   hsl(214, 26%, 17%);
+    margin: 15px;
+    border-radius: 15px;
+    padding: 5px;
+ }
+ .head{
+    color:  hsl(0, 100%, 100%);
+    font-family: sans-serif;
+    padding: 1px;
+    margin: 1px;
+ }
+ .parag{
+   color:  hsl(217, 12%, 63%);
+   font-size: x-small;
+   font-family: sans-serif;
+ }
+ .first{
+   color:  hsl(217, 12%, 63%);
+ }
+
+ .star{
+   background-color:   hsl(214, 17%, 28%) ;
+   color:  hsl(217, 12%, 63%);
+   border-radius: 50%;
+   border: none;
+   width: 30px;
+   height: 30px;
+   margin: 5px;
+ }
+ .star:hover{
+  background-color:  hsl(25, 97%, 53%) ; 
+ }
+ .sub_but{
+  background-color:  hsl(25, 97%, 53%);
+  border-radius: 25px;
+  width: 100%;
+  height: 35px;
+  border: none;
+  margin-top: 10px;
+ }
+ .thankyou{
+  display: flex;
+  justify-content: center;
+ }
+ .rate-selected{
+  background-color: hsl(214, 17%, 28%) ;
+  border-radius: 15px;
+  width: fit-content;
+  font-size: small;
+  font-family: sans-serif;
+  padding: 5px;
+  color:  hsl(25, 97%, 53%) ;
+  display: flex;
+  justify-content: center;
+ }
+ .card_2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+ .thanks{
+  color:  hsl(0, 100%, 100%);
+  font-family: sans-serif;
+ }
+ .conclusion{
+  color: hsl(217, 12%, 63%) ;
+  font-family: sans-serifs;
+  text-align: center;
+ }
+ .appreciate{
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+ .staractive{
+  background-color:  hsl(0, 100%, 100%);
+ }
