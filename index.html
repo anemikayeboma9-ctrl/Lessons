@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | Anemikaye Boma Catherine</title>
+    <style>
+        /* CSS STYLING */
+        :root {
+            --primary-blue: #1a2a6c;
+            --accent-gold: #fdbb2d;
+            --text-dark: #333;
+            --bg-light: #f4f7f6;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            color: var(--text-dark);
+        }
+
+        .profile-card {
+            background: white;
+            max-width: 450px;
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            overflow: hidden;
+            animation: slideUp 0.8s ease-out;
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .image-header {
+            width: 100%;
+            height: 350px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .image-header img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+            transition: transform 0.5s ease;
+        }
+
+        .profile-card:hover .image-header img {
+            transform: scale(1.05);
+        }
+
+        .content {
+            padding: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 1.6rem;
+            color: var(--primary-blue);
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            font-weight: 600;
+            color: #b21f1f; /* Crimson Red for University vibe */
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .details-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+            text-align: left;
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+        }
+
+        .detail-item {
+            border-bottom: 1px solid #eee;
+            padding-bottom: 8px;
+            font-size: 0.95rem;
+        }
+
+        .detail-item:last-child { border-bottom: none; }
+
+        .label {
+            font-weight: bold;
+            color: #777;
+            width: 100px;
+            display: inline-block;
+        }
+
+        .action-btn {
+            background: var(--primary-blue);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            font-size: 1rem;
+        }
+
+        .action-btn:hover {
+            background: #b21f1f;
+            box-shadow: 0 5px 15px rgba(178, 31, 31, 0.3);
+        }
+
+        #extra-content {
+            margin-top: 15px;
+            font-size: 0.85rem;
+            color: #555;
+            line-height: 1.5;
+            display: none;
+            padding: 10px;
+            border-top: 1px dashed #ccc;
+        }
+
+        .show { display: block !important; }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <div class="image-header">
+            <img src="1000009680.jpg" alt="Anemikaye Boma Catherine">
+        </div>
+
+        <div class="content">
+            <h1>Anemikaye Boma Catherine</h1>
+            <p class="subtitle">Bowen University Student</p>
+
+            <div class="details-grid">
+                <div class="detail-item">
+                    <span class="label">Age:</span> 18 Years
+                </div>
+                <div class="detail-item">
+                    <span class="label">Academic:</span> 300 Level
+                </div>
+                <div class="detail-item">
+                    <span class="label">Origin:</span> Port Harcourt, Rivers State
+                </div>
+                <div class="detail-item">
+                    <span class="label">Residence:</span> Lagos State, Nigeria
+                </div>
+            </div>
+
+            <button class="action-btn" onclick="toggleDetails()">Connect with Catherine</button>
+            
+            <div id="extra-content">
+                Currently excelling in her studies at Bowen University, Catherine combines the vibrant culture of Rivers State with the energetic lifestyle of Lagos.
+            </div>
+        </div>
+    </div>
